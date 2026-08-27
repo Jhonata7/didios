@@ -1,3 +1,4 @@
+import Brand from "./Brand";
 import {
   Mail,
   MapPin,
@@ -52,7 +53,7 @@ export default function Footer() {
               mb-5
             "
           >
-            {storeConfig.brand.name}
+            <Brand />
           </h2>
 
           <p
@@ -321,7 +322,7 @@ export default function Footer() {
           sm:text-sm
         "
       >
-        © 2026 diDios. Todos os direitos
+        © 2026 Ddios. Todos os direitos
         reservados.
       </div>
     </footer>

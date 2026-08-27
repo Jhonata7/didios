@@ -1,21 +1,24 @@
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
-    <section className="relative bg-[#eeeae7] overflow-hidden">
-
-      {/* Fundo */}
-
-      <img
-        src="/images/didios-capa.jpeg"
-        alt="Coleção feminina diDios"
-        className="block w-full h-auto lg:min-h-[680px] lg:max-h-[85vh] lg:object-cover lg:object-center"
-      />
-      <button
-        onClick={() => document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" })}
-        className="absolute z-10 left-[7.5%] bottom-[5.5%] bg-black text-white px-6 py-3 sm:px-9 sm:py-4 rounded-full text-sm sm:text-base font-semibold tracking-wide shadow-xl hover:bg-neutral-800 hover:-translate-y-0.5 duration-300"
-      >
-        Comprar agora
-      </button>
-
+    <section className="ddios-hero" aria-label="Moletom Ddios em destaque">
+      <div className="ddios-hero-photo">
+        <img src="/images/ddios-moletom-frente.jpg"
+          alt="Modelo vestindo a Blusa Moletom 2 Cabos Ddios off-white"
+          width="864" height="1536" fetchPriority="high" />
+      </div>
+      <div className="ddios-hero-action">
+        <div>
+          <p className="ddios-hero-label">Ddios · Moletons</p>
+          <h1>Blusa Moletom<br />2 Cabos</h1>
+          <p className="ddios-hero-price">R$ 169,99</p>
+        </div>
+        <Link to="/produto/11" className="ddios-buy">
+          Comprar agora <ArrowUpRight size={21} aria-hidden="true" />
+        </Link>
+      </div>
     </section>
   );
 }

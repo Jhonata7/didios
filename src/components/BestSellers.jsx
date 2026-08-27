@@ -67,7 +67,7 @@ export default function BestSellers({
               text-gray-400
             "
           >
-            Seleção diDios
+            Seleção Ddios
           </p>
 
           <h2

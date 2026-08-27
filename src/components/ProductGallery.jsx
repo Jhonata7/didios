@@ -227,7 +227,7 @@ export default function ProductGallery({
                     h-20
                     sm:w-24
                     sm:h-24
-                    object-cover
+                    object-contain
                   "
                 />
               </button>
@@ -281,7 +281,7 @@ export default function ProductGallery({
               block
               w-full
               h-full
-              object-cover
+              object-contain
               object-center
               select-none
             "

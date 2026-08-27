@@ -1,1 +1,32 @@
 @import "tailwindcss";
+.ddios-brand { display: inline-flex; align-items: center; gap: 5px; color: #191817; }
+.ddios-brand img { width: 56px; height: 56px; object-fit: contain; }
+.ddios-brand > span { font-family: Didot, "Bodoni MT", "Times New Roman", serif; font-size: 38px; font-weight: 400; letter-spacing: -2px; line-height: 1; }
+.ddios-hero { max-width: 1440px; margin: 0 auto; background: #f4f2ee; }
+.ddios-hero-photo { background: #f7f7f7; }
+.ddios-hero-photo img { display: block; width: 100%; height: min(112vw, 620px); object-fit: contain; }
+.ddios-hero-action { padding: 25px 24px 30px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.ddios-hero-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #635e57; margin-bottom: 8px; }
+.ddios-hero h1 { font-family: Georgia, serif; font-size: clamp(20px, 4.7vw, 30px); line-height: 1.15; font-weight: 400; }
+.ddios-hero-price { margin-top: 10px; font-size: 14px; }
+.ddios-buy { display: inline-flex; flex-shrink: 0; align-items: center; justify-content: center; gap: 12px; min-height: 52px; padding: 14px 20px; border-radius: 999px; color: #fff; background: #24211e; box-shadow: 0 6px 16px #24211e20; font-size: 13px; font-weight: 600; transition: background .2s, transform .2s; }
+.ddios-buy:hover { background: #494139; transform: translateY(-2px); }
+.ddios-buy:focus-visible { outline: 3px solid #87694b; outline-offset: 5px; }
+@media (min-width: 768px) {
+  .ddios-brand img { width: 64px; height: 64px; }
+  .ddios-brand > span { font-size: 44px; }
+  .ddios-hero { display: grid; grid-template-columns: 1fr 1fr; }
+  .ddios-hero-photo { order: 2; }
+  .ddios-hero-photo img { height: min(72vw, 740px); }
+  .ddios-hero-action { flex-direction: column; align-items: flex-start; justify-content: center; gap: 32px; padding: clamp(32px, 6vw, 90px); }
+  .ddios-hero-label { font-size: 12px; margin-bottom: 22px; }
+  .ddios-hero h1 { font-size: clamp(38px, 4.5vw, 64px); }
+  .ddios-hero-price { margin-top: 24px; font-size: 20px; }
+  .ddios-buy { padding: 18px 30px; font-size: 16px; }
+}
+@media (max-width: 359px) {
+  .ddios-hero-action { flex-direction: column; align-items: stretch; }
+  .ddios-brand img { width: 42px; height: 42px; }
+  .ddios-brand > span { font-size: 32px; }
+}
+@media (prefers-reduced-motion: reduce) { .ddios-buy { transition: none; } }

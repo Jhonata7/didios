@@ -6,7 +6,7 @@ export default function Newsletter() {
 
         <h2 className="text-5xl font-black mb-6">
 
-          Faça parte da diDios
+          Faça parte da Ddios
 
         </h2>
 

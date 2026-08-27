@@ -1,3 +1,4 @@
+import Brand from "./Brand";
 import { useContext, useEffect, useState } from "react";
 import {
   Link,
@@ -152,9 +153,7 @@ export default function Header({ onCartClick }) {
             onClick={handleLogoClick}
             className="group flex items-center gap-2 flex-shrink-0 hover:opacity-75 duration-300"
           >
-            <span className="font-serif text-3xl sm:text-4xl tracking-[-2px] leading-none text-black">diDios</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-black mt-4" aria-hidden="true" />
-            <span className="sr-only">diDios</span>
+            <Brand />
           </button>
 
           {/* MENU DESKTOP */}
@@ -456,7 +455,7 @@ export default function Header({ onCartClick }) {
               font-black
             "
           >
-            diDios
+            Ddios
           </strong>
 
           <button

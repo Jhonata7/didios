@@ -78,6 +78,7 @@ export default function ProductCard({
             alt={product.name}
             onError={handleImageError}
             loading="lazy"
+            style={{ objectFit: product.imageFit || "cover", objectPosition: "center top" }}
             className="
               block
               w-full

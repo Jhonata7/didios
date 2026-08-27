@@ -4,7 +4,7 @@ import storeConfig from "../config/storeConfig";
 
 export default function WhatsAppButton() {
   const message =
-    "Olá! Vim pelo site da diDios e gostaria de tirar uma dúvida.";
+    "Olá! Vim pelo site da Ddios e gostaria de tirar uma dúvida.";
 
   const whatsappUrl =
     `https://wa.me/${storeConfig.contact.whatsappInternational}` +
@@ -15,7 +15,7 @@ export default function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Falar com a diDios pelo WhatsApp"
+      aria-label="Falar com a Ddios pelo WhatsApp"
       title="Fale conosco pelo WhatsApp"
       className="
         fixed
