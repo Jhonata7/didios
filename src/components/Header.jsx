@@ -150,23 +150,10 @@ export default function Header({ onCartClick }) {
           <button
             type="button"
             onClick={handleLogoClick}
-            className="
-              text-xl
-              sm:text-2xl
-              md:text-3xl
-              font-black
-              tracking-[4px]
-              sm:tracking-[5px]
-              hover:scale-105
-              duration-300
-              flex-shrink-0
-            "
+            className="group flex items-center gap-2 flex-shrink-0 hover:opacity-75 duration-300"
           >
-            <img
-              src="/images/didios-logo.jpeg"
-              alt="diDios"
-              className="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover bg-black"
-            />
+            <span className="font-serif text-3xl sm:text-4xl tracking-[-2px] leading-none text-black">diDios</span>
+            <span className="h-1.5 w-1.5 rounded-full bg-black mt-4" aria-hidden="true" />
             <span className="sr-only">diDios</span>
           </button>
 

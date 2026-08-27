@@ -1,5 +1,26 @@
 const products = [
   {
+    id: 11,
+    name: "Blusa Moletom 2 Cabos",
+    description:
+      "Blusa de moletom feminina em tom off-white, com capuz, dois cabos contrastantes e bordado exclusivo diDios. O tecido encorpado e macio oferece conforto térmico, enquanto a modelagem ampla garante um caimento moderno e versátil para o dia a dia.",
+    category: "Moletons",
+    price: 169.99,
+    oldPrice: 199.99,
+    installments: 5,
+    stock: 10,
+    badge: "Lançamento",
+    image: "/images/moletom-2-cabos-frente.png",
+    images: [
+      "/images/moletom-2-cabos-frente.png",
+      "/images/moletom-2-cabos-lateral.png",
+      "/images/moletom-2-cabos-pose.png"
+    ],
+    colors: ["Off-white"],
+    sizes: ["P", "M", "G", "GG"]
+  },
+
+  {
     id: 9,
     name: "Camiseta Feminina Essential Cacau",
     description:
