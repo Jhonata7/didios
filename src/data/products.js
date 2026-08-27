@@ -13,7 +13,9 @@ const products = [
     image: "/images/ddios-moletom-frente.jpg",
     imageFit: "contain",
     images: [
-      "/images/ddios-moletom-frente.jpg"
+      "/images/ddios-moletom-frente.jpg",
+      "/images/ddios-moletom-lateral.webp",
+      "/images/ddios-moletom-pose.webp"
     ],
     colors: ["Off-white"],
     sizes: ["P", "M", "G", "GG"]
