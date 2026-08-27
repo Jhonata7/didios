@@ -1,39 +1,46 @@
 export default function Hero() {
   return (
-    <section className="relative h-[85vh] bg-gradient-to-r from-black via-gray-900 to-black overflow-hidden">
+    <section className="relative min-h-[72vh] lg:h-[85vh] bg-black overflow-hidden">
 
       {/* Fundo */}
 
-      <div className="absolute inset-0 bg-black/40"></div>
+      <img
+        src="/images/didios-capa.jpeg"
+        alt="Coleção feminina diDios"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent lg:from-black/45 lg:via-transparent"></div>
 
       {/* Conteúdo */}
 
       <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-8">
 
-        <div className="max-w-2xl text-white">
+        <div className="max-w-xl text-white pt-80 sm:pt-72 lg:pt-0">
 
           <p className="uppercase tracking-[8px] text-gray-300 mb-5">
 
-            Nova Coleção 2026
+            Coleção Feminina 2026
 
           </p>
 
           <h1 className="text-6xl lg:text-7xl font-black leading-tight">
 
-            Vista sua essência.
+            Elegância que valoriza você.
 
           </h1>
 
           <p className="mt-8 text-xl text-gray-300 leading-8">
 
-            Camisetas premium desenvolvidas para quem busca conforto,
-            qualidade e um estilo que chama atenção sem exageros.
+            Modelos casuais de alto padrão, com conforto, versatilidade
+            e sofisticação em cada detalhe.
 
           </p>
 
           <div className="mt-12 flex gap-5">
 
             <button
+              onClick={() => document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" })}
               className="
                 bg-white
                 text-black
@@ -60,7 +67,7 @@ export default function Hero() {
                 duration-300
               "
             >
-              Conhecer a Marca
+              Conhecer a coleção
             </button>
 
           </div>

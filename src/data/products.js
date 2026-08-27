@@ -1,5 +1,39 @@
 const products = [
   {
+    id: 9,
+    name: "Camiseta Feminina Essential Cacau",
+    description:
+      "Camiseta feminina premium em tom cacau, com modelagem casual, toque macio e caimento confortável. Uma peça versátil e sofisticada para compor produções elegantes no dia a dia.",
+    category: "Camisetas",
+    price: 89.90,
+    oldPrice: 119.90,
+    installments: 3,
+    stock: 12,
+    badge: "Lançamento",
+    image: "/images/camiseta-feminina-cacau.jpeg",
+    images: ["/images/camiseta-feminina-cacau.jpeg"],
+    colors: ["Cacau"],
+    sizes: ["P", "M", "G", "GG"]
+  },
+
+  {
+    id: 10,
+    name: "Camiseta Feminina Essential Marinho",
+    description:
+      "Camiseta feminina premium em azul-marinho, desenvolvida para oferecer conforto e um visual contemporâneo. A modelagem casual proporciona ótimo caimento e combina facilmente com jeans, alfaiataria ou peças esportivas.",
+    category: "Camisetas",
+    price: 89.90,
+    oldPrice: 119.90,
+    installments: 3,
+    stock: 12,
+    badge: "Lançamento",
+    image: "/images/camiseta-feminina-marinho.jpeg",
+    images: ["/images/camiseta-feminina-marinho.jpeg"],
+    colors: ["Azul-marinho"],
+    sizes: ["P", "M", "G", "GG"]
+  },
+
+  {
     id: 1,
     name: "Camiseta Essential Black",
     description:

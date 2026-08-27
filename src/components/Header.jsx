@@ -162,7 +162,12 @@ export default function Header({ onCartClick }) {
               flex-shrink-0
             "
           >
-            diDios
+            <img
+              src="/images/didios-logo.jpeg"
+              alt="diDios"
+              className="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover bg-black"
+            />
+            <span className="sr-only">diDios</span>
           </button>
 
           {/* MENU DESKTOP */}
