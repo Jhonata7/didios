@@ -3,8 +3,8 @@
 .ddios-brand img { width: 56px; height: 56px; object-fit: contain; }
 .ddios-brand > span { font-family: Didot, "Bodoni MT", "Times New Roman", serif; font-size: 38px; font-weight: 400; letter-spacing: -2px; line-height: 1; }
 .ddios-hero { max-width: 1440px; margin: 0 auto; background: #f4f2ee; }
-.ddios-hero-photo { background: #e5e2de; }
-.ddios-hero-photo img { display: block; width: 100%; height: auto; max-height: 780px; object-fit: contain; }
+.ddios-hero-photo { display: block; width: 100%; background: #e5e2de; }
+.ddios-hero-photo img { display: block; width: 100%; height: auto; }
 .ddios-hero-action { padding: 25px 24px 30px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .ddios-hero-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #635e57; margin-bottom: 8px; }
 .ddios-hero h1 { font-family: Georgia, serif; font-size: clamp(20px, 4.7vw, 30px); line-height: 1.15; font-weight: 400; }
