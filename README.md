@@ -1,16 +1,94 @@
-# React + Vite
+# Ddios — E-commerce em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de e-commerce desenvolvida com React, com navegação entre produtos, carrinho, checkout, favoritos, pedidos e integração de pagamento no back-end.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O objetivo do projeto é simular uma experiência completa de loja virtual, trabalhando organização de componentes, gerenciamento de estado, rotas, persistência de dados e integração entre front-end e servidor.
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Front-end
 
-## Expanding the ESLint configuration
+- React 19
+- Vite 8
+- React Router
+- JavaScript
+- Tailwind CSS
+- Lucide React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Back-end e integração
+
+- Node.js
+- Express
+- Mercado Pago SDK
+- CORS
+- dotenv
+
+## Funcionalidades
+
+- Catálogo de produtos
+- Página individual de produto
+- Carrinho lateral
+- Checkout
+- Favoritos
+- Área de pedidos
+- Detalhes do pedido
+- Página de sucesso
+- Tela de login
+- Persistência de informações no navegador
+- Integração de pagamentos utilizando variável de ambiente no servidor
+- Layout responsivo
+
+## Rotas principais
+
+```text
+/
+/produto/:id
+/checkout
+/success
+/favoritos
+/meus-pedidos
+/pedido/:id
+/login
+```
+
+## Executando localmente
+
+Instale as dependências:
+
+```bash
+git clone https://github.com/Jhonata7/didios.git
+cd didios
+npm install
+```
+
+Inicie o front-end:
+
+```bash
+npm run dev
+```
+
+Inicie o servidor em outro terminal:
+
+```bash
+npm run server
+```
+
+Para utilizar a integração de pagamento, configure a variável de ambiente no servidor:
+
+```env
+MERCADO_PAGO_ACCESS_TOKEN=sua_credencial_aqui
+```
+
+Credenciais reais não devem ser versionadas no GitHub.
+
+## Build
+
+```bash
+npm run build
+```
+
+---
+
+Projeto desenvolvido e mantido por **Jhonata Milani** como parte do meu portfólio de desenvolvimento web e sistemas.
